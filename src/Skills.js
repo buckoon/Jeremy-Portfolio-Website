@@ -1,8 +1,7 @@
 import React from "react";
-import { Link } from "react-router-dom";
+
 import { motion } from "framer-motion";
 import Skill from "./Skill";
-import prof3 from "./images/prof3.JPG";
 
 function Skills() {
   return (

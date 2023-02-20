@@ -14,7 +14,7 @@ function Skill() {
         }}
         transition={{ duration: 1 }}
         whileInView={{ opacity: 1, x: 0 }}
-        src={Css.src}
+        src={Css}
         className="rounded-full border border-gray-500 object-cover w-24 h-24 md:w-28 md-h-28 xl:w-32 xl:h-32 filter group-hover:grayscale transtition duration-300 ease-in-out "
       />
       {/*<div>
