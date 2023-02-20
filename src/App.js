@@ -6,6 +6,7 @@ import Skills from "./Skills";
 import Header from "./Header";
 import Projects from "./Projects";
 import WorkExperience from "./WorkExperience";
+import Footer from "./Footer";
 
 function App() {
   return (
@@ -26,6 +27,8 @@ function App() {
 
         <Route path="/projects" element={<Projects />} />
       </Routes>
+
+      <Footer />
     </div>
   );
 }

@@ -1,6 +1,8 @@
 import React from "react";
 import { SocialIcon } from "react-social-icons";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
+import prof3 from "./images/prof3.JPG";
 
 function Header() {
   return (
