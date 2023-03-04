@@ -82,6 +82,10 @@ function Header() {
           <Link to="/projects">
             <button className="heroButton">Projects</button>
           </Link>
+
+          <Link to="/contact">
+            <button className="heroButton">Contact Me</button>
+          </Link>
         </div>
       </motion.div>
     </div>
