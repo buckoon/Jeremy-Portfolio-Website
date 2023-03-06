@@ -11,7 +11,7 @@ function ExperienceCard() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         className="h-32 w-32 rounded-full xl:w-[200px] xl:h-[200px] object-cover object-center"
-        src={Km.src}
+        src={Km}
       />
       <div className="px-0 md:px-10">
         <h4 className="text-4xl font-light">Config Dev</h4>

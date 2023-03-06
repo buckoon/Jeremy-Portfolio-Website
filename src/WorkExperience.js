@@ -1,8 +1,8 @@
 import React from "react";
-import { Link } from "react-router-dom";
+
 import { motion } from "framer-motion";
 import ExperienceCard from "./ExperienceCard";
-import prof3 from "./images/prof3.JPG";
+
 
 function WorkExperience() {
   return (
