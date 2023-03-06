@@ -14,20 +14,29 @@ function ExperienceCard() {
         src={Km}
       />
       <div className="px-0 md:px-10">
-        <h4 className="text-4xl font-light">Config Dev</h4>
-        <p className="font-bold text-2xl mt-1">Kollmorgen</p>
+        <h4 className="text-4xl font-light">Application Engineer</h4>
+        <p className="font-bold text-2xl mt-1">Kollmorgen (a subsidiary of Altra Industrial Motion Corp) </p>
         <div className="flex space-x-2 my-2 rounded-full">
           {/* JavaScript Logo <img className="h-10 w-10 rounded-full" src={?.src} /> */}
           {/* <img className="h-10 w-10 rounded-full" src={?.src} /> */}
           {/* <img className="h-10 w-10 rounded-full" src={?.src} /> */}
         </div>
-        <p className="uppercase py-5 text-gray-300">Started work....-Ended</p>
+        <p className="uppercase py-5 text-gray-300">June 2015-April 2021</p>
         <ul className="list-disc space-y-4 ml-5 text-lg">
-          <li>Summary points</li>
-          <li>Summary points</li>
-          <li>Summary points</li>
-          <li>Summary points</li>
-          <li>Summary points</li>
+          <li>Contributed to the achievement $16.43 mil in new business for the year 2020
+          </li>
+          <li>
+                Worked with customers performing engineering calculations daily in order to size and
+             select products based off customer requirements
+          </li>
+          <li>
+                Improved our customer on time responses (less than 2 days) from 34% to 90%
+         </li>
+          <li>
+                 Lead multiple Kaizen events where one resulted in the achievement of the KPI on time
+                delivery improving from 54% to 80% 
+          </li>
+         
         </ul>
       </div>
     </article>
