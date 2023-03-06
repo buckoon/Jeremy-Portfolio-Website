@@ -7,10 +7,10 @@ import { useForm, SubmitHandler } from "react-hook-form";
 
 
 function Contact() {
-  const { register, handleSubmit, watch, formState: { errors } } = useForm();
-  const onSubmit = data => console.log(data);
-
-  console.log(watch("example")); // watch input value by passing the name of it
+    const { register, handleSubmit, formState: { errors } } = useForm();
+  const onSubmit = Data => {window.location.href = `mailto:jeremydeveloper1689@gmail.com?subject=${Data.subject}&body= Hi, my name is ${Data.name}. ${Data.message}`;
+};
+;
   
   return (
     <div className="h-screen flex relative flex-col text-center md:text-left md:flex-row
@@ -21,28 +21,22 @@ function Contact() {
 
         <div className="flex flex-col space-y-10">
             <h4 className="text-4xl font-semibold text-center">
-                I have got just what you need. {""}
-                <span className="decoration-[#F7AB0A]/50 underline">Lets Talk</span>
+                Thanks for stopping by. {""}
+                <span className="decoration-[#F7AB0A]/50 underline">Feel free to reach out.</span>
             </h4>
        
 
           
 
             <div className="space-y-10">
-                <div className="flex items-center space-x-5 justify-center">
-                 <PhoneIcon className="text-[#F7AB0A] h-7 w-7 animate-pulse" />
-                 <p className="text-2xl">777-777-7777</p>
-                </div>
+             
 
-                <div className="flex items-center space-x-5 justify-center">
-                 <EnvelopeIcon className="text-[#F7AB0A] h-7 w-7 animate-pulse" />
-                 <p className="text-2xl">j@gmail.com</p>
-                </div>
+              <div className="flex items-center space-x-5 justify-center">
+                <EnvelopeIcon className="text-[#F7AB0A] h-7 w-7 animate-pulse" />
+                <p className="text-2xl">jeremydeveloper1689@gmail.com</p>
+              </div>
 
-                <div className="flex items-center space-x-5 justify-center">
-                 <MapPinIcon className="text-[#F7AB0A] h-7 w-7 animate-pulse" />
-                 <p className="text-2xl">123 Developer Lane</p>
-                </div>
+                
             </div>
 
             <form 
