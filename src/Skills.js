@@ -1,5 +1,4 @@
 import React from "react";
-
 import { motion } from "framer-motion";
 import Skill1 from "./Skill1";
 import Skill2 from "./Skill2";
@@ -18,30 +17,53 @@ function Skills() {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
-      className="flex relative flex-col text-center md:text-left
-     sl:flex-row max-w-[2000px] xl:px-10 min-h-screen justify-center xl:space-y-0 mx-auto items-center"
+      className="flex relative flex-col text-center md:text-left sl:flex-row max-w-[2000px] xl:px-10 min-h-screen justify-center xl:space-y-0 mx-auto items-center"
     >
       <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
         Skills
       </h3>
 
-      <h3 className="absolute top-36 uppercase tracking-[3px] text-gray-500 text-sm">
-        
-      </h3>
-
       <div className="grid grid-cols-4 gap-5">
-        <Skill1 />
-        <Skill2 />
-        <Skill3 />
-        <Skill4 />
-        <Skill5 />
-        <Skill6 />
-        <Skill7 />
-        <Skill8 />
-        <Skill9 />
-        <Skill10 />
-
-     
+        <div className="flex flex-col items-center">
+          <Skill1 />
+          <p className="text-sm text-gray-500 mt-2">CSS</p>
+        </div>
+        <div className="flex flex-col items-center">
+          <Skill2 />
+          <p className="text-sm text-gray-500 mt-2">Javascript 2</p>
+        </div>
+        <div className="flex flex-col items-center">
+          <Skill3 />
+          <p className="text-sm text-gray-500 mt-2">HTML</p>
+        </div>
+        <div className="flex flex-col items-center">
+          <Skill4 />
+          <p className="text-sm text-gray-500 mt-2">React JS 4</p>
+        </div>
+        <div className="flex flex-col items-center">
+          <Skill5 />
+          <p className="text-sm text-gray-500 mt-2">Tailwind CSS</p>
+        </div>
+        <div className="flex flex-col items-center">
+          <Skill6 />
+          <p className="text-sm text-gray-500 mt-2">Firebase</p>
+        </div>
+        <div className="flex flex-col items-center">
+          <Skill7 />
+          <p className="text-sm text-gray-500 mt-2">GitHub</p>
+        </div>
+        <div className="flex flex-col items-center">
+          <Skill8 />
+          <p className="text-sm text-gray-500 mt-2">SQL</p>
+        </div>
+        <div className="flex flex-col items-center">
+          <Skill9 />
+          <p className="text-sm text-gray-500 mt-2">NEXT JS</p>
+        </div>
+        <div className="flex flex-col items-center">
+          <Skill10 />
+          <p className="text-sm text-gray-500 mt-2">Sanity IO</p>
+        </div>
       </div>
     </motion.div>
   );

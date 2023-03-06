@@ -3,7 +3,7 @@ import aboutPic from "./images/wed.jpg";
 import { motion } from "framer-motion";
 
 function Projects() {
-  const projects = [1, 2, 3, 4, 5];
+  const projects = [1, 2, 3];
 
   return (
     <motion.div
@@ -12,7 +12,7 @@ function Projects() {
       transition={{ duration: 1.5 }}
       className="h-screen relative flex overflow-hidden flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center z-0"
     >
-      <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
+      <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl" style={{marginBottom: "2rem"}}>
         Projects
       </h3>
 
@@ -36,15 +36,17 @@ function Projects() {
 
             <div className="space-y-10 px-0 md:px-10 max-w-6xl">
               <h4 className="text-4xl font-semibold text-center">
-                <span className="underline decoration-[#F7AB0A]/50">
-                  Case Study {i + 1} of {projects.length}:
+                <span className=" decoration-[#F7AB0A]/50">
+                  Hobby Hunter (project {i +1} of {projects.length}): 
                 </span>
-                UPS Clone
+                <div className="text-lg">
+                  <a href="https://hobby-hunter-c0a22.web.app" className="underline text-blue-500 hover:text-blue-700">
+                     hobby-hunter-c0a22.web.app
+                  </a>
+                </div>
               </h4>
               <p className="text-lg text-center md:text-left">
-                Project summerymfsajfsj'ii'ajtjaei'tjaijaeijas'eiajiajspaj
-                kjfojsfoijsfodijaoijaoifjaoifjds'ojf'djfaij'sdjfjksadljkjfj
-                kdsa'jfkjfkldkljflsdkjf;lsdjfslkajfklasjaljakl;ajska;lfkjff
+              Hobby Hunter is a web application that enables users to create a personal profile and share their hobbies along with instructions on how to get started with them. The app is built using REACT Redux and features Google authentication for secure login and logout. Additionally, the app utilizes firebase storage to store the hobbies that users may post.
               </p>
             </div>
           </div>
