@@ -37,7 +37,7 @@ function About() {
           background
         </h4>
         <p className="text-base">
-        After graduating college as a Mechanical Engineer in 2015, I began working at Kollmorgen where I gained valuable industry experience. However, two years ago I was also drawn to the world of web development and started learning Javascript, HTML, and CSS on my own time as a hobby. I've grown my skills to the point where I was able to successfully pivot my career and transfer to an IT role as an Oracle Configurator developer. I'm passionate about continuing to learn and grow my skills in both traditional engineering and web development, and I'm excited to take on new challenges and projects.
+        After graduating college as a Mechanical Engineer in 2015, I began working at Kollmorgen where I gained valuable industry experience. However, two years ago I was also drawn to the world of web development and started learning Javascript, HTML, and CSS on my own time as a hobby. I've grown my skills to the point where I was able to successfully pivot my career and transfer to an IT role as an Oracle Configurator Developer. I'm passionate about continuing to learn and grow my skills in both traditional engineering and web development, and I'm excited to take on new challenges and projects.
        
   
         </p>
