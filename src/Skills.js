@@ -30,7 +30,7 @@ function Skills() {
         </div>
         <div className="flex flex-col items-center">
           <Skill2 />
-          <p className="text-sm text-gray-500 mt-2">Javascript 2</p>
+          <p className="text-sm text-gray-500 mt-2">Javascript </p>
         </div>
         <div className="flex flex-col items-center">
           <Skill3 />

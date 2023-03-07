@@ -1,5 +1,5 @@
 import React from "react";
-import aboutPic from "./images/wed.jpg";
+import pic from "./images/hpic1.png";
 import { motion } from "framer-motion";
 
 function Projects() {
@@ -30,8 +30,11 @@ function Projects() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.2 }}
               viewport={{ once: true }}
-              src={aboutPic.src}
+              src={pic}
               alt=""
+              style={{ transition: "transform 0.2s ease-in-out" }} // Add transition style
+              onMouseOver={(e) => (e.currentTarget.style.transform = "scale(1.1)")} // Add onMouseOver event
+              onMouseOut={(e) => (e.currentTarget.style.transform = "scale(1)")} // Add onMouseOut event
             />
 
             <div className="space-y-10 px-0 md:px-10 max-w-6xl">
