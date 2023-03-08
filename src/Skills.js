@@ -10,6 +10,7 @@ import Skill7 from "./Skill7";
 import Skill8 from "./Skill8";
 import Skill9 from "./Skill9";
 import Skill10 from "./Skill10";
+import Skill11 from "./Skill11";
 
 function Skills() {
   return (
@@ -63,6 +64,10 @@ function Skills() {
         <div className="flex flex-col items-center">
           <Skill10 />
           <p className="text-sm text-gray-500 mt-2">Sanity IO</p>
+        </div>
+        <div className="flex flex-col items-center">
+          <Skill11 />
+          <p className="text-sm text-gray-500 mt-2">TypeScript</p>
         </div>
       </div>
     </motion.div>

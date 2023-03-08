@@ -16,7 +16,10 @@ function Project({ projectNumber, imageUrl, projectTitle, projectLink, projectDe
         viewport={{ once: true }}
         src={imageUrl}
         alt=""
-        style={{ transition: "transform 0.2s ease-in-out" }}
+        style={{ transition: "transform 0.2s ease-in-out",
+        width:"800px",
+        height:"auto",
+        }}
         onMouseOver={(e) => (e.currentTarget.style.transform = "scale(1.1)")}
         onMouseOut={(e) => (e.currentTarget.style.transform = "scale(1)")}
       />
@@ -24,7 +27,7 @@ function Project({ projectNumber, imageUrl, projectTitle, projectLink, projectDe
       <div className="space-y-10 px-0 md:px-10 max-w-6xl">
         <h4 className="text-4xl font-semibold text-center">
           <span className=" decoration-[#F7AB0A]/50">
-            {projectTitle} (project {projectNumber} of 3)
+            {projectTitle} (project {projectNumber} of 2)
           </span>
           <div className="text-lg">
             <a href={projectLink} className="underline text-blue-500 hover:text-blue-700">

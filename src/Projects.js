@@ -1,5 +1,5 @@
 import React from "react";
-import pic from "./images/hpic1.png";
+import pic from "./images/hpic.png";
 import Km from "./images/Kmapp.png"
 import { motion } from "framer-motion";
 import Project from "./Project";
@@ -15,7 +15,7 @@ function Projects() {
       title: "Hobby Hunter",
       link: "https://hobby-hunter-c0a22.web.app",
       description:
-        "Hobby Hunter is a web application that enables users to create a personal profile and share their hobbies along with instructions on how to get started with them. The app is built using REACT Redux and features Google authentication for secure login and logout. Additionally, the app utilizes firebase storage to store the hobbies that users may post.",
+        "After building several clones of websites that already exist I wanted to build something that was my own original concept. When my dad retired in 2022 he was having trouble looking for new things or hobbies to occupy his time and that is when I thought of creating Hobb Hunter. Hobby Hunter is a web application that enables users to create a personal profile and share their hobbies along with instructions on how to get started with them. The app is built using REACT Redux and features Google authentication for secure login and logout. Additionally, the app utilizes firebase storage to store the hobbies that users may post.",
     },
 
     {
@@ -40,7 +40,7 @@ function Projects() {
         Projects
       </h3>
 
-      <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80">
+      <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#0A81F7]/80">
         {projects.map((project) => (
           <Project
             key={project.number}
@@ -53,7 +53,7 @@ function Projects() {
         ))}
       </div>
 
-      <div className="w-full absolute top-[30%] bg-[#F7AB0A]/10 left-0 h-[500px] -skew-y-12" />
+      <div className="w-full absolute top-[30%] bg-[#0A81F7]/10 left-0 h-[500px] -skew-y-12" />
     </motion.div>
   );
 }

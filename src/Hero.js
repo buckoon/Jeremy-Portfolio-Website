@@ -32,7 +32,7 @@ function Hero() {
           {/*text should be 5xl and large screen 6xL, padding on the large screen
           to be 10*/}
           <span>{text}</span>
-          <Cursor cursorColor="#F7AB0A" />
+          <Cursor cursorColor="#0A81F7" />
         </h1>
 
       
