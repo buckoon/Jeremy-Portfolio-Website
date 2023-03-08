@@ -22,7 +22,7 @@ function Contact() {
         <div className="flex flex-col space-y-10">
             <h4 className="text-4xl font-semibold text-center">
                 Thanks for stopping by. {""}
-                <span className="decoration-[#F7AB0A]/50 underline">Feel free to reach out.</span>
+                <span className="decoration-[#0A81F7]/50 underline">Feel free to reach out.</span>
             </h4>
        
 
@@ -32,7 +32,7 @@ function Contact() {
              
 
               <div className="flex items-center space-x-5 justify-center">
-                <EnvelopeIcon className="text-[#F7AB0A] h-7 w-7 animate-pulse" />
+                <EnvelopeIcon className="text-[#FF8C00] h-7 w-7 animate-pulse" />
                 <p className="text-2xl">jeremydeveloper1689@gmail.com</p>
               </div>
 
@@ -55,7 +55,7 @@ function Contact() {
                 <textarea {...register("message")} placeholder="Message"className="contactInput"/>
                 <button 
                  type="submit"
-                 className="bg-[#F7AB0A] py-5 px-10 rounded-md text-black font-bold text-lg">Submit</button>
+                 className="bg-[#0A81F7] py-5 px-10 rounded-md text-black font-bold text-lg">Submit</button>
             </form>
 
             
