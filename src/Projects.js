@@ -1,9 +1,33 @@
 import React from "react";
 import pic from "./images/hpic1.png";
+import Km from "./images/Kmapp.png"
 import { motion } from "framer-motion";
+import Project from "./Project";
 
+
+
+  
 function Projects() {
-  const projects = [1, 2, 3];
+  const projects = [
+    {
+      number: 1,
+      imageUrl: pic,
+      title: "Hobby Hunter",
+      link: "https://hobby-hunter-c0a22.web.app",
+      description:
+        "Hobby Hunter is a web application that enables users to create a personal profile and share their hobbies along with instructions on how to get started with them. The app is built using REACT Redux and features Google authentication for secure login and logout. Additionally, the app utilizes firebase storage to store the hobbies that users may post.",
+    },
+
+    {
+      number: 2,
+      imageUrl: Km,
+      title: "Motor Selector",
+      link: "kjdfp'jf",
+      description:
+        "duuuuuuuuuuuuuuuuuuuudeeeeeeee",
+    },
+    // Add more projects here
+  ];
 
   return (
     <motion.div
@@ -12,47 +36,20 @@ function Projects() {
       transition={{ duration: 1.5 }}
       className="h-screen relative flex overflow-hidden flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center z-0"
     >
-      <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl" style={{marginBottom: "2rem"}}>
+      <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl" style={{ marginBottom: "2rem" }}>
         Projects
       </h3>
 
       <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80">
-        {projects.map((project, i) => (
-          <div
-            key={i}
-            className="w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-44 h-screen"
-          >
-            <motion.img
-              initial={{
-                y: -300,
-                opacity: 0,
-              }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1.2 }}
-              viewport={{ once: true }}
-              src={pic}
-              alt=""
-              style={{ transition: "transform 0.2s ease-in-out" }} // Add transition style
-              onMouseOver={(e) => (e.currentTarget.style.transform = "scale(1.1)")} // Add onMouseOver event
-              onMouseOut={(e) => (e.currentTarget.style.transform = "scale(1)")} // Add onMouseOut event
-            />
-
-            <div className="space-y-10 px-0 md:px-10 max-w-6xl">
-              <h4 className="text-4xl font-semibold text-center">
-                <span className=" decoration-[#F7AB0A]/50">
-                  Hobby Hunter (project {i +1} of {projects.length}): 
-                </span>
-                <div className="text-lg">
-                  <a href="https://hobby-hunter-c0a22.web.app" className="underline text-blue-500 hover:text-blue-700">
-                     hobby-hunter-c0a22.web.app
-                  </a>
-                </div>
-              </h4>
-              <p className="text-lg text-center md:text-left">
-              Hobby Hunter is a web application that enables users to create a personal profile and share their hobbies along with instructions on how to get started with them. The app is built using REACT Redux and features Google authentication for secure login and logout. Additionally, the app utilizes firebase storage to store the hobbies that users may post.
-              </p>
-            </div>
-          </div>
+        {projects.map((project) => (
+          <Project
+            key={project.number}
+            projectNumber={project.number}
+            imageUrl={project.imageUrl}
+            projectTitle={project.title}
+            projectLink={project.link}
+            projectDescription={project.description}
+          />
         ))}
       </div>
 
@@ -61,4 +58,4 @@ function Projects() {
   );
 }
 
-export default Projects;
+export default Projects
