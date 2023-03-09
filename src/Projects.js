@@ -22,9 +22,10 @@ function Projects() {
       number: 2,
       imageUrl: Km,
       title: "Motor Selector",
-      link: "kjdfp'jf",
+      link: "https://dc-motor-selection-tool-react.vercel.app",
+
       description:
-        "duuuuuuuuuuuuuuuuuuuudeeeeeeee",
+        "This project is significant to me because it was the first application I created after mastering state and props. Its inclusion demonstrates my growth as a developer from my initial stages to the present.",
     },
     // Add more projects here
   ];
