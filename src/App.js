@@ -7,6 +7,8 @@ import Header from "./Header";
 import Projects from "./Projects";
 import WorkExperience from "./WorkExperience";
 import Contact from "./Contact";
+
+
 /*import Footer from "./Footer";*/
 
 
@@ -34,7 +36,7 @@ function App() {
 
       </Routes>
 
-      {/*<Footer />*/}
+      
     </div>
   );
 }

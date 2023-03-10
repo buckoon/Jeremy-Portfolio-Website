@@ -1,8 +1,10 @@
 import React from "react";
-import { Link } from "react-router-dom";
+
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import BackgroundCircles from "./BackgroundCircles";
 import ProfImage from "./images/prof3.JPG";
+
+import Footer from "./Footer";
 
 function Hero() {
   const [text, helper] = useTypewriter({
@@ -34,9 +36,11 @@ function Hero() {
           <span>{text}</span>
           <Cursor cursorColor="#0A81F7" />
         </h1>
-
+        
+        
       
       </div>
+      <Footer />
     </div>
   );
 }

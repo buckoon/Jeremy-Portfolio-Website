@@ -5,6 +5,7 @@ import ExperienceCard1 from "./ExperienceCard1";
 import ExperienceCard2 from "./ExperienceCard2";
 import ExperienceCard3 from "./ExperienceCard3";
 import ExperienceCard4 from "./ExperienceCard4";
+import Footer from "./Footer";
 
 
 function WorkExperience() {
@@ -27,6 +28,7 @@ function WorkExperience() {
         <ExperienceCard4 />
         
       </div>
+      <Footer />
     </motion.div>
   );
 }

@@ -28,7 +28,7 @@ function Project({ projectNumber, imageUrl, projectTitle, projectLink, projectDe
         <h4 className="text-4xl font-semibold text-center">
           <a href={projectLink} className="underline text-blue-500 hover:text-blue-700">
             <span className="decoration-[#F7AB0A]/50">
-              {projectTitle} (project {projectNumber} of 2)
+              {projectTitle} (project {projectNumber} of 3)
             </span>
           </a>
         </h4>

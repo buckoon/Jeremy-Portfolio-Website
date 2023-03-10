@@ -1,23 +1,50 @@
 import React from "react";
 import { motion } from "framer-motion";
-import Skill1 from "./Skill1";
-import Skill2 from "./Skill2";
-import Skill3 from "./Skill3";
-import Skill4 from "./Skill4";
-import Skill5 from "./Skill5";
-import Skill6 from "./Skill6";
-import Skill7 from "./Skill7";
-import Skill8 from "./Skill8";
-import Skill9 from "./Skill9";
-import Skill10 from "./Skill10";
-import Skill11 from "./Skill11";
+import Skill from "./Skill";
+import CSS from "./images/css.png";
+import Js from "./images/javascript.png";
+import HTML from "./images/html.png";
+import ReactJS from "./images/react.png";
+import TailwindCSS from "./images/tailwind.png";
+import Firebase from "./images/firebase.png";
+import GitHub from "./images/github.png";
+import SQL from "./images/sql.png";
+import NEXTJS from "./images/NEXT.jpg";
+import SanityIO from "./images/sanity.png";
+import TypeScript from "./images/typescript.png";
+import Footer from "./Footer";
 
 function Skills() {
+  const directionLeft = true;
+  const skills = [
+    { name: "CSS", src: CSS },
+    { name: "Javascript", src: Js },
+    { name: "HTML", src: HTML },
+    { name: "React JS 4", src: ReactJS },
+    { name: "Tailwind CSS", src: TailwindCSS },
+    { name: "Firebase", src: Firebase },
+    { name: "GitHub", src: GitHub },
+    { name: "SQL", src: SQL },
+    { name: "NEXT JS", src: NEXTJS },
+    { name: "Sanity IO", src: SanityIO },
+    { name: "TypeScript", src: TypeScript },
+  ];
+
   return (
     <motion.div
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      transition={{ duration: 1.5 }}
+      initial={{
+        x: directionLeft ? -100 : 100,
+        y: directionLeft ? 100 : -100,
+        opacity: 0,
+      }}
+      transition={{
+        duration: 1,
+      }}
+      whileInView={{
+        x: 0,
+        y: 0,
+        opacity: 1,
+      }}
       className="flex relative flex-col text-center md:text-left sl:flex-row max-w-[2000px] xl:px-10 min-h-screen justify-center xl:space-y-0 mx-auto items-center"
     >
       <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
@@ -25,51 +52,17 @@ function Skills() {
       </h3>
 
       <div className="grid grid-cols-4 gap-5">
-        <div className="flex flex-col items-center">
-          <Skill1 />
-          <p className="text-sm text-gray-500 mt-2">CSS</p>
-        </div>
-        <div className="flex flex-col items-center">
-          <Skill2 />
-          <p className="text-sm text-gray-500 mt-2">Javascript </p>
-        </div>
-        <div className="flex flex-col items-center">
-          <Skill3 />
-          <p className="text-sm text-gray-500 mt-2">HTML</p>
-        </div>
-        <div className="flex flex-col items-center">
-          <Skill4 />
-          <p className="text-sm text-gray-500 mt-2">React JS 4</p>
-        </div>
-        <div className="flex flex-col items-center">
-          <Skill5 />
-          <p className="text-sm text-gray-500 mt-2">Tailwind CSS</p>
-        </div>
-        <div className="flex flex-col items-center">
-          <Skill6 />
-          <p className="text-sm text-gray-500 mt-2">Firebase</p>
-        </div>
-        <div className="flex flex-col items-center">
-          <Skill7 />
-          <p className="text-sm text-gray-500 mt-2">GitHub</p>
-        </div>
-        <div className="flex flex-col items-center">
-          <Skill8 />
-          <p className="text-sm text-gray-500 mt-2">SQL</p>
-        </div>
-        <div className="flex flex-col items-center">
-          <Skill9 />
-          <p className="text-sm text-gray-500 mt-2">NEXT JS</p>
-        </div>
-        <div className="flex flex-col items-center">
-          <Skill10 />
-          <p className="text-sm text-gray-500 mt-2">Sanity IO</p>
-        </div>
-        <div className="flex flex-col items-center">
-          <Skill11 />
-          <p className="text-sm text-gray-500 mt-2">TypeScript</p>
-        </div>
+        {skills.map((skill) => (
+          <div className="flex flex-col items-center" key={skill.name}>
+            <Skill
+              directionLeft={directionLeft}
+              src={skill.src}
+              name={skill.name}
+            />
+          </div>
+        ))}
       </div>
+      <Footer />
     </motion.div>
   );
 }

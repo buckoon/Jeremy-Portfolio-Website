@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import profimage from "./images/profimage.PNG";
+import Footer from "./Footer";
 
 function About() {
   return (
@@ -42,7 +43,9 @@ function About() {
   
         </p>
       </div>
+      <Footer />
     </motion.div>
+    
   );
 }
 

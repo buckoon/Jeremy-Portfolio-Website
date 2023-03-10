@@ -31,7 +31,7 @@ function ExperienceCard() {
             Developer with Oracle 11i/R12
           </li>
           <li>
-           Utilize database query tools to support data gathering requirements using
+           Analyzing, generating and maintaining massive amounts of data using 
             SQL, Excel, Oracle configurator and Data Loader.
 
           </li>
