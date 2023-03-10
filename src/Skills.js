@@ -20,7 +20,7 @@ function Skills() {
     { name: "CSS", src: CSS },
     { name: "Javascript", src: Js },
     { name: "HTML", src: HTML },
-    { name: "React JS 4", src: ReactJS },
+    { name: "React JS", src: ReactJS },
     { name: "Tailwind CSS", src: TailwindCSS },
     { name: "Firebase", src: Firebase },
     { name: "GitHub", src: GitHub },
