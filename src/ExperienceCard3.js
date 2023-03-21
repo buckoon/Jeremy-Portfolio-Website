@@ -26,8 +26,7 @@ function ExperienceCard() {
           <li>Contributed to the achievement $16.43 mil in new business for the year 2020
           </li>
           <li>
-                Worked with customers performing engineering calculations daily in order to size and
-             select products based off customer requirements
+                Worked with customers performing engineering calculations daily in order to come up with a design solution based off customer requirements
           </li>
           <li>
                 Improved our customer on time responses (less than 2 days) from 34% to 90%
