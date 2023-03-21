@@ -1,5 +1,5 @@
 import React from "react";
-import pic from "./images/hpic.png";
+import pic from "./images/screenshot.png";
 import Km from "./images/Kmapp.png"
 import { motion } from "framer-motion";
 import Project from "./Project";
