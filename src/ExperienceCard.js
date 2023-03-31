@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-/*import Km from "./images/Km.jpg";*/
+
 
 function ExperienceCard({
   image,

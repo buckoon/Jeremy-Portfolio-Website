@@ -18,5 +18,15 @@
         focus:border-[#0A81F7]/40
         focus:text-[#0A81F7]/40 hover:border-[#0A81F7]/40
     }
+
+    .work-experience-container::-webkit-scrollbar {
+        display: none;
+      }
+      
+      .work-experience-container {
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+      }
+      
 }
 

@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 import ExperienceCard from "./ExperienceCard";
 import Footer from "./Footer";
 
-
 function WorkExperience() {
   return (
     <motion.div
@@ -18,8 +17,28 @@ function WorkExperience() {
         EXPERIENCE
       </h3>
 
-
-      <div className="w-full flex space-x-5 overflow-x-scroll p-10 snap-x snap-mandatory scrollbar scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#0A81F7]/80">
+      <div
+        className="w-full flex flex-col items-center space-y-5 p-10 snap-y snap-mandatory"
+        style={{ maxHeight: "100vh", overflowY: "scroll" }}
+      >
+        <style>{`
+          .w-full::-webkit-scrollbar {
+            width: 0.5em;
+            height: 0.5em;
+          }
+          
+          .w-full::-webkit-scrollbar-track {
+            background-color: transparent;
+          }
+          
+          .w-full::-webkit-scrollbar-thumb {
+            background-color: transparent;
+          }
+          
+          .w-full::-webkit-scrollbar-corner {
+            background-color: transparent;
+          }
+        `}</style>
         <ExperienceCard
         image = {Km}
         title="Oracle Configurator Developer"
