@@ -19,7 +19,7 @@ function WorkExperience() {
 
       <div
         className="w-full flex flex-col items-center space-y-5 p-10 snap-y snap-mandatory"
-        style={{ maxHeight: "100vh", overflowY: "scroll" }}
+        style={{ maxHeight: "100vh",  overflowY: "scroll", overflowX:"hidden" }}
       >
         <style>{`
           .w-full::-webkit-scrollbar {

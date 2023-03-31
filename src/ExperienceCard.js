@@ -26,11 +26,7 @@ function ExperienceCard({
       <div className="px-0 md:px-10">
         <h4 className="text-4xl font-light">{title}</h4>
         <p className="font-bold text-2xl mt-1">{company}</p>
-        <div className="flex space-x-2 my-2 rounded-full">
-          {/* JavaScript Logo <img className="h-10 w-10 rounded-full" src={?.src} /> */}
-          {/* <img className="h-10 w-10 rounded-full" src={?.src} /> */}
-          {/* <img className="h-10 w-10 rounded-full" src={?.src} /> */}
-        </div>
+       
         <p className="uppercase py-5 text-gray-300">{date}</p>
         <ul className="list-disc space-y-4 ml-5 text-lg">
           {responsibility1 && <li>{responsibility1}</li>}
@@ -39,7 +35,9 @@ function ExperienceCard({
           {responsibility4 && <li>{responsibility4}</li>}
           {responsibility5 && <li>{responsibility5}</li>}
         </ul>
+        
       </div>
+      
     </article>
   );
 }
