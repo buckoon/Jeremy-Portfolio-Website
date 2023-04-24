@@ -38,6 +38,10 @@ function WorkExperience() {
           .w-full::-webkit-scrollbar-corner {
             background-color: transparent;
           }
+
+          
+
+
         `}</style>
         <ExperienceCard
         image = {Km}

@@ -17,9 +17,9 @@ function Projects() {
       link: "https://hobby-hunter-pro.vercel.app",
       description:
         "After building several clones of websites that already exist I wanted to build something that was my own original concept. When my dad retired in 2022 he was having trouble looking for new things or hobbies to occupy his time and that is when I thought of creating Hobby Hunter. Hobby Hunter is a web application that enables users to create a personal profile and share their hobbies along with instructions on how to get started with a hobby. The app is built using REACT Redux and features Google authentication for secure login and logout. Additionally, the app utilizes firebase storage to store the hobbies that users may post.",
-    },
+    }
 
-    {
+   /* {
       number: 2,
       imageUrl: Km,
       title: "Motor Selector",
@@ -38,6 +38,7 @@ function Projects() {
         
       
     }
+    */
         
 
    

@@ -26,16 +26,18 @@ function Project({ projectNumber, imageUrl, projectTitle, projectLink, projectDe
 
       <div className="space-y-10 px-0 md:px-10 max-w-6xl">
         <h4 className="text-4xl font-semibold text-center">
-          <a href={projectLink} className="underline text-blue-500 hover:text-blue-700">
-            <span className="decoration-[#F7AB0A]/50">
-              {projectTitle} (project {projectNumber} of 3)
-            </span>
+          <span className="decoration-[#F7AB0A]/50">
+            {projectTitle} (project {projectNumber} of 1)
+          </span>
+          <a href={projectLink} className="underline text-blue-500 hover:text-blue-700" style={{ display: 'block' }}>
+            <span>{projectLink}</span>
           </a>
         </h4>
-        <p className="text-lg text-center md:text-left">
+       <p className="text-lg text-center md:text-left">
           {projectDescription}
-        </p>
+       </p>
       </div>
+
     </div>
   );
 }
