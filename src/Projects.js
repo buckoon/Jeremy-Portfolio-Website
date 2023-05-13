@@ -1,5 +1,5 @@
 import React from "react";
-import pic from "./images/screenshot.png";
+import pic from "./images/hobby hunter sample pic.png";
 import Km from "./images/Kmapp.png"
 import { motion } from "framer-motion";
 import Project from "./Project";
@@ -16,7 +16,7 @@ function Projects() {
       title: "Hobby Hunter",
       link: "https://hobby-hunter-pro.vercel.app",
       description:
-        "After building several clones of websites that already exist I wanted to build something that was my own original concept. When my dad retired in 2022 he was having trouble looking for new things or hobbies to occupy his time and that is when I thought of creating Hobby Hunter. Hobby Hunter is a web application that enables users to create a personal profile and share their hobbies along with instructions on how to get started with a hobby. The app is built using REACT Redux and features Google authentication for secure login and logout. Additionally, the app utilizes firebase storage to store the hobbies that users may post.",
+        "After building several clones of websites that already exist I wanted to build something that was my own original concept. When my dad retired in 2022 he was having trouble looking for new things or hobbies to occupy his time and that is when I thought of creating Hobby Hunter. Hobby Hunter is a web application that enables users to create a personal profile and share their hobbies along with instructions on how to get started with a hobby. The app is built using REACT Redux and features Google authentication for secure login and logout. Additionally, the app utilizes firebase storage to store the hobbies that users may post. Even though the App has been deployed to production, it is still a work in progress as I am currently expanding the backend using Node.js, Express, and MongoDB. Building out the backend will provide additional opportunities, such as the ability to modify a user's profile after creation and the ability to engage in conversation with other users. Additionally, it may allow for the implementation of other advanced features. ",
     }
 
    /* {
