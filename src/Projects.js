@@ -1,6 +1,6 @@
 import React from "react";
 import pic from "./images/hobby hunter sample pic.png";
-import Km from "./images/Kmapp.png"
+
 import Kn from "./images/newsite.png"
 import { motion } from "framer-motion";
 import Project from "./Project";
