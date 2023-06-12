@@ -1,6 +1,7 @@
 import React from "react";
 import pic from "./images/hobby hunter sample pic.png";
 import Km from "./images/Kmapp.png"
+import Kn from "./images/newsite.png"
 import { motion } from "framer-motion";
 import Project from "./Project";
 import Footer from "./Footer";
@@ -12,6 +13,15 @@ function Projects() {
   const projects = [
     {
       number: 1,
+      imageUrl: Kn,
+      title: "MERN Stack Hobby Hunter",
+      link: "https://hobby-hunter.onrender.com",
+
+      description:
+        "This project is currently under development and represents my second version of Hobby Hunter. I chose to utilize the MERN Stack because it allows me to have greater control over the project's functionality by creating my own backend. Furthermore, I have also redesigned a significant portion of the user interface to enhance its professional appearance." 
+    },
+    {
+      number: 2,
       imageUrl: pic,
       title: "Hobby Hunter",
       link: "https://hobby-hunter-pro.vercel.app",

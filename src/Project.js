@@ -27,7 +27,7 @@ function Project({ projectNumber, imageUrl, projectTitle, projectLink, projectDe
       <div className="space-y-10 px-0 md:px-10 max-w-6xl">
         <h4 className="text-4xl font-semibold text-center">
           <span className="decoration-[#F7AB0A]/50">
-            {projectTitle} (project {projectNumber} of 1)
+            {projectTitle} (project {projectNumber} of 2)
           </span>
           <a href={projectLink} className="underline text-blue-500 hover:text-blue-700" style={{ display: 'block' }}>
             <span>{projectLink}</span>
