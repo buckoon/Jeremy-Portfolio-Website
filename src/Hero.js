@@ -1,12 +1,13 @@
 import React from "react";
-
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import BackgroundCircles from "./BackgroundCircles";
 import ProfImage from "./images/prof3.JPG";
-
 import Footer from "./Footer";
+import { useMediaQuery } from "@mui/material";
 
 function Hero() {
+  const isSmallScreen = useMediaQuery("(max-width: 768px)");
+
   const [text, helper] = useTypewriter({
     words: [
       "Hi, My Name is Jeremy",
@@ -30,15 +31,18 @@ function Hero() {
         <h2 className="text-sm uppercase text-gray-500 pb-2 tracking-[15px]">
           Software Engineer
         </h2>
-        <h1 className="text-5xl lg:text-6xl font-semibold px-10">
-          {/*text should be 5xl and large screen 6xL, padding on the large screen
-          to be 10*/}
-          <span>{text}</span>
-          <Cursor cursorColor="#0A81F7" />
-        </h1>
-        
-        
-      
+       
+        {isSmallScreen ? (
+          <h1 className="text-4xl lg:text-5xl font-semibold px-5">
+            <span>{text}</span>
+            <Cursor cursorColor="#0A81F7" />
+          </h1>
+        ) : (
+          <h1 className="text-5xl lg:text-6xl font-semibold px-10">
+            <span>{text}</span>
+            <Cursor cursorColor="#0A81F7" />
+          </h1>
+        )}
       </div>
       <Footer />
     </div>

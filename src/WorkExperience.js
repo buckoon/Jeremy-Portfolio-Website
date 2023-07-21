@@ -11,14 +11,14 @@ function WorkExperience() {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
-      className="h-screen flex relative overflow-hidden flex-col text-lft md:flex-row max-w-full px-10 justify-evenly mx-auto items-center"
+      className="h-screen flex relative overflow-hidden flex-col text-lft md:flex-row max-w-full px-1 justify-evenly mx-auto items-center"
     >
       <h3 className="absolute top-0 left-1/2 transform -translate-x-1/2 uppercase tracking-[20px] text-gray-500 text-2xl">
         EXPERIENCE
       </h3>
 
       <div
-        className="w-full flex flex-col items-center space-y-5 p-10 snap-y snap-mandatory"
+        className="w-full flex flex-col items-center space-y-5 p-10 snap-y snap-mandatory "
         style={{ maxHeight: "100vh",  overflowY: "scroll", overflowX:"hidden" }}
       >
         <style>{`

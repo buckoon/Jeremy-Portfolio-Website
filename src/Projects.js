@@ -1,14 +1,10 @@
 import React from "react";
 import pic from "./images/hobby hunter sample pic.png";
-
-import Kn from "./images/newsite.png"
+import Kn from "./images/newsite.png";
 import { motion } from "framer-motion";
 import Project from "./Project";
 import Footer from "./Footer";
 
-
-
-  
 function Projects() {
   const projects = [
     {
@@ -34,7 +30,7 @@ function Projects() {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
-      className="h-screen relative flex overflow-hidden flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center z-0"
+      className="h-auto relative flex overflow-hidden flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center z-0"
     >
       <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl" style={{ marginBottom: "2rem" }}>
         Projects
@@ -59,4 +55,4 @@ function Projects() {
   );
 }
 
-export default Projects
+export default Projects;

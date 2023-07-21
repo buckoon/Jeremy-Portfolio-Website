@@ -1,5 +1,5 @@
 import React from 'react';
-import { EnvelopeIcon } from '@heroicons/react/24/solid';
+import EmailIcon from '@mui/icons-material/Email';
 import { useForm } from "react-hook-form";
 
 
@@ -22,7 +22,7 @@ function Contact() {
 
         <div className="space-y-10">
           <div className="flex items-center space-x-5 justify-center">
-            <EnvelopeIcon className="text-[#FF8C00] h-7 w-7 animate-pulse" />
+            <EmailIcon className="text-[#FF8C00] h-7 w-7 animate-pulse" />
             <p className="text-2xl">jeremydeveloper1689@gmail.com</p>
           </div>
         </div>
