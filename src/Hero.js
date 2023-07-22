@@ -1,7 +1,7 @@
 import React from "react";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import BackgroundCircles from "./BackgroundCircles";
-import ProfImage from "./images/prof3.JPG";
+import ProfImage from "./images/elon.png";
 import Footer from "./Footer";
 import { useMediaQuery } from "@mui/material";
 
@@ -23,7 +23,7 @@ function Hero() {
       <BackgroundCircles />
 
       <img
-        className="relative rounded-full h-32 w-32 mx-auto object-cover"
+        className="relative  h-40 w-40 mx-auto object-cover rounded-lg"
         src={ProfImage}
       />
 
