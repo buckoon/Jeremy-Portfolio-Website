@@ -4,8 +4,10 @@ import Kn from "./images/newsite.png";
 import { motion } from "framer-motion";
 import Project from "./Project";
 import Footer from "./Footer";
+import useMediaQuery from './hooks/useMediaQuery';
 
 function Projects() {
+  const isAboveMediumScreens = useMediaQuery("(min-width: 768px)");
   const projects = [
     {
       number: 1,
@@ -13,9 +15,9 @@ function Projects() {
       title: "MERN Stack Hobby Hunter",
       link: "https://hobby-hunter.onrender.com",
       description:
-        "This project is currently being developed as the second version of Hobby Hunter. To have more control over the project's functionality, I decided to utilize the MERN Stack, which allows me to create a custom backend. Alongside this, I also redesigned the React portion of the project.\n\nThe concept for this website originated from my aspiration to build something original, rather than replicating existing websites. When my father retired in 2022, he encountered difficulties in finding new hobbies or activities to occupy his time. This served as the inspiration behind Hobby Hunter. It is a web application that empowers users to create personal profiles and share their hobbies, including detailed instructions on how to get started with each one. Built using the MERN Stack (MongoDB, Express, React, Node.js) and incorporating Redux for state management, the application encompasses various features. These include user authentication, the ability to create posts, as well as like and comment on them. Moreover, it includes a weather forecaster and a random hobby generator. Currently, my focus is on implementing the functionality to add friends and the user profile component for each user, which I aim to complete this weekend. Following that, I plan to incorporate a search bar to enable users to query different hobbies.",
+      "The concept for this website originated from my aspiration to build something original, rather than replicating existing websites.  It is a web application that empowers users to create personal profiles and share their hobbies, including detailed instructions on how to get started with each one. Built using React, Express, Node, and incorporating Redux for state management, the application encompasses various featuresthat include the following: user authentication, the ability to create posts, as well as like and comment on them and send friend requests. Moreover, it includes a weather forecaster and a random hobby generator and profile page for each user." 
     },
-    {
+      {
       number: 2,
       imageUrl: pic,
       title: "Hobby Hunter",
@@ -32,7 +34,8 @@ function Projects() {
       transition={{ duration: 1.5 }}
       className="h-auto relative flex overflow-hidden flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center z-0"
     >
-      <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl" style={{ marginBottom: "2rem" }}>
+      
+      <h3 className={isAboveMediumScreens ? ("absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl"):("absolute top-2 uppercase tracking-[20px] text-gray-500 text-2xl")} >
         Projects
       </h3>
 
@@ -44,7 +47,7 @@ function Projects() {
             imageUrl={project.imageUrl}
             projectTitle={project.title}
             projectLink={project.link}
-            projectDescription={project.description}
+            projectDescription={isAboveMediumScreens ? project.description : null}
           />
         ))}
       </div>
